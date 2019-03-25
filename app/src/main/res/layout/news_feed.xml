@@ -9,19 +9,19 @@
 
 
     <ImageView
-         android:id="@+id/imageView_Dictionary-image"
-         android:layout_width="140dp"
-         android:layout_height="140dp"
-         android:layout_centerHorizontal="true"
-         android:layout_above="@+id/TextView_Dictionary"
-         android:src="@drawable/AB"
-     />
+        android:id="@+id/imageView_Dictionary-image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/TextView_Dictionary"
+        android:src="@drawable/newsfeed"
+        />
 
     <TextView
         android:id="@+id/TextView_Dictionary"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:text="Dictionary"
+        android:text="News Feed"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#C6111111"
@@ -70,7 +70,7 @@
         android:layout_below="@+id/TextView_Dictionary-LoginPassword"
         android:textSize="20dp"
         android:hint="Enter Your Password to Login"/>
-    
+
     <Button
         android:id="@+id/Button_Dictionary-LOGIN"
         android:layout_width="300dp"
