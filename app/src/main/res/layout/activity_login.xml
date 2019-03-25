@@ -5,46 +5,93 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:background="#59CCC9C9">
+    android:background="#92E7E3E3">
 
 
     <ImageView
-         android:id="@+id/imageView_book"
+         android:id="@+id/imageView_Dictionary-image"
          android:layout_width="wrap_content"
          android:layout_height="wrap_content"
          android:layout_centerHorizontal="true"
          android:layout_above="@+id/TextView_Dictionary"
-         android:src="@drawable/dictionary"
+         android:src="@drawable/pencil"
      />
 
     <TextView
         android:id="@+id/TextView_Dictionary"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:text="Dictionary"
         android:textSize="30dp"
         android:textStyle="bold"
         android:textColor="#C6111111"
         android:layout_centerInParent="true"
         />
+
+    <TextView
+        android:id="@+id/TextView_Dictionary-LoginUserName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="User Name:"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#C6111111"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/TextView_Dictionary"/>
+
     <EditText
-        android:id="@+id/EditText_LoginEmail"
-        android:layout_width="wrap_content"
+        android:id="@+id/EditText_Dictionary-LoginEmail"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/TextView_Dictionary"
+        android:layout_below="@+id/TextView_Dictionary-LoginUserName"
         android:textSize="20dp"
         android:textType="Email"
         android:hint="Enter Your Email to Login"/>
 
+
+    <TextView
+        android:id="@+id/TextView_Dictionary-LoginPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="User Password:"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#C6111111"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/EditText_Dictionary-LoginEmail"/>
+
+
     <EditText
-        android:id="@+id/EditText_LoginPassWord"
-        android:layout_width="wrap_content"
+        android:id="@+id/EditText_Dictionary-LoginPassWord"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/EditText_LoginEmail"
+        android:layout_below="@+id/TextView_Dictionary-LoginPassword"
         android:textSize="20dp"
         android:hint="Enter Your Password to Login"/>
+    
+    <Button
+        android:id="@+id/Button_Dictionary-LOGIN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#C6111111"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/EditText_Dictionary-LoginPassWord"/>
+
+    <Button
+        android:id="@+id/Button_Dictionary-signIN"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="SIGN IN"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#C6111111"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Button_Dictionary-LOGIN"/>
 
 
 </RelativeLayout>
