@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:rowCount="10"
+    android:columnCount="6">
+
+    <ImageButton
+        android:id="@+id/project1"
+        android:src="@drawable/AB"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_row="1"
+        android:layout_rowSpan="2"
+        android:layout_column="1"
+        android:layout_columnSpan="2"/>
+    <TextView
+        android:text="hahah"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowSpan="1"
+        android:layout_column="1"
+        android:layout_columnSpan="2" />
+
+    <ImageButton
+        android:id="@+id/project2"
+        android:src="@drawable/newyork_time"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_row="1"
+        android:layout_rowSpan="2"
+        android:layout_column="4"
+        android:layout_columnSpan="2"/>
+    <TextView
+        android:text="hahah"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="3"
+        android:layout_rowSpan="1"
+        android:layout_column="4"
+        android:layout_columnSpan="2" />
+
+    <ImageButton
+        android:id="@+id/project3"
+        android:src="@drawable/airplant"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_row="5"
+        android:layout_rowSpan="2"
+        android:layout_column="1"
+        android:layout_columnSpan="2"/>
+    <TextView
+        android:text="hahah"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_rowSpan="1"
+        android:layout_column="1"
+        android:layout_columnSpan="2" />
+
+    <ImageButton
+        android:id="@+id/project4"
+        android:src="@drawable/newsfeed"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_row="5"
+        android:layout_rowSpan="2"
+        android:layout_column="4"
+        android:layout_columnSpan="2"/>
+    <TextView
+        android:text="hahah"
+        android:textSize="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_rowSpan="1"
+        android:layout_column="4"
+        android:layout_columnSpan="2" />
+
+</GridLayout>
