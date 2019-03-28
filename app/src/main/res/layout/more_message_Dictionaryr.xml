@@ -11,19 +11,20 @@
             android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal"
-            android:textSize="15dp"
+            android:textSize="20dp"
             android:textStyle="bold"
             android:text="Dictionary search interface"/>
 
         <ImageView
             android:id="@+id/image_message_page"
-            android:layout_width="150dp"
-            android:layout_height="280dp"
+            android:layout_width="130dp"
+            android:layout_height="250dp"
             app:srcCompat="@drawable/AB" />
 
         <TextView
             android:id="@+id/TextView_message_page"
             android:layout_width="250dp"
+            android:textSize="18dp"
             android:layout_height="wrap_content"
             android:text="Tepy word you want to check?"/>
 
@@ -32,8 +33,21 @@
             android:id="@+id/view_edit_text"
             android:hint="Type here"
             android:layout_width="250dp"
+            android:textSize="18dp"
+
             android:layout_height="wrap_content"/>
 
+    <Button
+        android:id="@+id/Button_Dictionary-findWord"
+        android:layout_width="70dp"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector"
+        android:textSize="10dp"
+        android:textStyle="bold"
+        android:textColor="#FFFCFC"
+        android:text="Search"/>
 
 
         <RelativeLayout
@@ -47,19 +61,21 @@
             <Button
             android:id="@+id/Button_Dictionary-AddWord"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentBottom="true"
-            android:textColor="#C42929"
+                android:background="@drawable/selector"
+            android:textColor="#FCF9F9"
             android:text="Go Back" />
 
         <Button
             android:id="@+id/buttonSend"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="40dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
-            android:textColor="#C42929"
+            android:background="@drawable/selector"
+            android:textColor="#FCF9F9"
             android:text="Add Word" />
 
     </RelativeLayout>
