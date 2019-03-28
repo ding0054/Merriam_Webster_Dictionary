@@ -72,7 +72,7 @@ public class TestToolbar extends AppCompatActivity {
     }
     public void alertExample()
     {
-        View middle = getLayoutInflater().inflate(R.layout.more_message_Dictionaryr, null);
+        View middle = getLayoutInflater().inflate(R.layout.dictionary_interface, null);
 
         EditText et = (EditText)middle.findViewById(R.id.view_edit_text);
         //btn.setOnClickListener( clk -> {et.setText("You clicked my button!");});
