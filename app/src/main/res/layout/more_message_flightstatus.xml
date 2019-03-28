@@ -7,7 +7,8 @@
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal">
+        android:layout_gravity="center">
+
         <TextView
             android:id="@+id/TextView_display"
             android:layout_width="250dp"
@@ -19,28 +20,118 @@
 
         <ImageView
             android:id="@+id/image_message_page"
-            android:layout_width="130dp"
-            android:layout_height="250dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_display"
+            android:layout_centerHorizontal="true"
             app:srcCompat="@drawable/airplant" />
     </RelativeLayout>
 
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/Text_airplan_IATA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="IATA CODE: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditText_IATA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter code here" />
+
+
+        <Button
+            android:id="@+id/Button_Dictionary-findWord"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#44B0EB"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
 
     </LinearLayout>
 
-    <LinearLayout
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal">
+
+       <TextView
+           android:id="@+id/Text_airport_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Airport Name: "
+           android:textColor="#000000"
+           android:textSize="18dp"
+           android:textStyle="bold" />
+
+       <EditText
+           android:id="@+id/EditText_airport_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:hint="Enter Name here" />
+
+
+       <Button
+           android:id="@+id/Button_airport_name"
+           android:layout_width="70dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:background="#44B0EB"
+           android:textSize="10dp"
+           android:textStyle="bold"
+           android:textColor="#FFFCFC"
+           android:text="submit"/>
+
+   </RelativeLayout>
+
+    <RelativeLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
 
-    </LinearLayout>
+        <TextView
+            android:id="@+id/Text_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Name: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/EditText_Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter Location here" />
 
-    </LinearLayout>
+
+        <Button
+            android:id="@+id/Button_Location"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#44B0EB"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
+
+    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="wrap_content"
