@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ProgressBar
+        android:id="@+id/progress_newFeed_detil"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#024427"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"/>
+
+    <ListView
+        android:id="@+id/listView_newFeed_detil"
+        android:layout_width="wrap_content"
+        android:layout_height="580dp"
+        android:background="#9291C0BA"
+        android:layout_gravity="bottom"
+        />
+
+    <Button
+        android:id="@+id/Button_newFeed_Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#629989"
+        android:textStyle="bold"
+        android:text="Delete"/>
+
+    <Button
+        android:id="@+id/Button_newFeed_GoBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#629989"
+        android:textStyle="bold"
+        android:text="Go Back"/>
+
+
+</LinearLayout>

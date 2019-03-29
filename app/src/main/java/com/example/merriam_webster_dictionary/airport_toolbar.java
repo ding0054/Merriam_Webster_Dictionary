@@ -14,15 +14,15 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class TestToolbar extends AppCompatActivity {
+public class airport_toolbar extends AppCompatActivity {
 
     private Toolbar tToolBar;
     private String message;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dictionary_toolbar);
-        tToolBar = (Toolbar)findViewById(R.id.toolbar);
+        setContentView(R.layout.activity_airport_toobar);
+        tToolBar = (Toolbar)findViewById(R.id.toolbar_airport);
         setSupportActionBar(tToolBar);
         message = "This is the initial message";
     }
@@ -31,7 +31,7 @@ public class TestToolbar extends AppCompatActivity {
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu items for use in the action bar
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.dictionary_menu, menu);
+        inflater.inflate(R.menu.airport_menu, menu);
 
         return true;
     }
@@ -72,9 +72,9 @@ public class TestToolbar extends AppCompatActivity {
     }
     public void alertExample()
     {
-        View middle = getLayoutInflater().inflate(R.layout.interface_dictionary, null);
+        View middle = getLayoutInflater().inflate(R.layout.interface_aiport, null);
 
-        EditText et = (EditText)middle.findViewById(R.id.view_edit_text);
+        EditText et = (EditText)middle.findViewById(R.id.EditText_Location);
         //btn.setOnClickListener( clk -> {et.setText("You clicked my button!");});
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);

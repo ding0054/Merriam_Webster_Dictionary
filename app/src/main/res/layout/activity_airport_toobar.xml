@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_airport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="@string/app_name2"
+        app:theme2="@style/Base.V21.Theme.AppCompat"/>
+    <!--</android.support.v7.widget.Toolbar>-->
+
+
+
+    <ProgressBar
+        android:id="@+id/progress_airport"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#740404"
+        android:layout_below="@+id/toolbar_airport"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="invisible"/>
+
+</RelativeLayout>

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextView_display"
+            android:layout_width="250dp"
+            android:layout_height="80dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="Airplant search interface"/>
+
+        <ImageView
+            android:id="@+id/image_message_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_display"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/airplant" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <CheckBox
+            android:id="@+id/Starting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/arrive"
+            android:layout_centerHorizontal="true"
+            android:text="Starting"/>
+
+        <CheckBox
+            android:id="@+id/arrive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Arrive"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Text_IATACODE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="IATA Code: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditText_IATACODE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter Code here" />
+
+
+        <Button
+            android:id="@+id/Button_IATACODE"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#44B0EB"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
+
+    </RelativeLayout>
+
+   <RelativeLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_gravity="center_horizontal">
+
+       <TextView
+           android:id="@+id/Text_airport_name"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Airport Name: "
+           android:textColor="#000000"
+           android:textSize="18dp"
+           android:textStyle="bold" />
+
+       <EditText
+           android:id="@+id/EditText_airport_name"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:hint="Enter Name here" />
+
+
+       <Button
+           android:id="@+id/Button_airport_name"
+           android:layout_width="70dp"
+           android:layout_height="40dp"
+           android:layout_alignParentRight="true"
+           android:background="#44B0EB"
+           android:textSize="10dp"
+           android:textStyle="bold"
+           android:textColor="#FFFCFC"
+           android:text="submit"/>
+
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Text_Location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Location Name: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditText_Location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter Location here" />
+
+
+        <Button
+            android:id="@+id/Button_Location"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#44B0EB"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+    <Button
+        android:id="@+id/search"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="#FFFCFC"
+        android:textStyle="bold"
+        android:background="#44B0EB"
+        android:layout_centerHorizontal="true"
+        android:text="search" />
+
+        <ListView
+            android:id="@+id/ListView_airport_searchPage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@+id/search"
+            android:layout_above="@+id/Button_airport-AddWord">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/Button_airport-AddWord"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#44B0EB"
+            android:textColor="#FCF9F9"
+            android:text="Go Back" />
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#44B0EB"
+            android:textColor="#FCF9F9"
+            android:text="Add" />
+    </RelativeLayout>
+
+</LinearLayout>

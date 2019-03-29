@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/TextView_newYorkTime_display"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:gravity="center_horizontal"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:text="New York Time search interface"/>
+
+        <ImageView
+            android:id="@+id/image_newYorkTime_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/TextView_newYorkTime_display"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/newyork_time" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Text_newYorkTime_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="author: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditText_newYorkTime_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter author here" />
+
+
+        <Button
+            android:id="@+id/Button_newYorkTime_author"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#E1E07C24"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Text_newYorkTime_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditText_newYorkTime_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter Title here" />
+
+
+        <Button
+            android:id="@+id/Button_newYorkTime_title"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#E1E07C24"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/Text_newYorkTime_keyWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Key Word: "
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/EditText_newYorkTime_keyWord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter keyWord here" />
+
+
+        <Button
+            android:id="@+id/Button_newYorkTime_keyWord"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:background="#E1E07C24"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:textColor="#FFFCFC"
+            android:text="submit"/>
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:textColor="#FFFCFC"
+            android:textStyle="bold"
+            android:background="#E1E07C24"
+            android:layout_centerHorizontal="true"
+            android:text="search" />
+
+        <ListView
+            android:id="@+id/ListView_newYorkTime_searchPage"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_below="@+id/search">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/Button_newYorkTime-AddWord"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="#E1E07C24"
+            android:textColor="#FCF9F9"
+            android:text="Go Back" />
+
+        <Button
+            android:id="@+id/button_newYorkTime_add"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:background="#E1E07C24"
+            android:textColor="#FCF9F9"
+            android:text="Add" />
+    </RelativeLayout>
+
+</LinearLayout>

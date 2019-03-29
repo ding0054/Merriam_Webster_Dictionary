@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">Merriam_Webster_Dictionary</string>
+    <string name="app_name">Dictionary</string>
+    <string name="app_name2">Airport</string>
     <string name="menuName1">Choice 1</string>
     <string name="menuName2">Choice 2</string>
     <string name="menuName3">Choice 3</string>
@@ -7,4 +8,5 @@
     <string name="menuName5">Dictionary</string>
     <string name="menuName6">Airplan</string>
     <string name="menuName7">New york Times</string>
+
 </resources>

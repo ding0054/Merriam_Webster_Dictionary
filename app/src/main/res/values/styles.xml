@@ -5,8 +5,8 @@
         <item name="colorPrimary">#C42929</item>
         <item name="colorPrimaryDark">#CECE13</item>
         <item name="colorAccent">@color/colorAccent</item>
-
-
+        <item name="android:textColorPrimary">@android:color/black</item>
+        <item name="android:colorBackground">#85F3F3F3</item>
     </style>
 
 </resources>
