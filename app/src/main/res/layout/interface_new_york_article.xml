@@ -157,7 +157,8 @@
             android:id="@+id/ListView_newYorkTime_searchPage"
             android:layout_width="wrap_content"
             android:layout_height="300dp"
-            android:layout_below="@+id/search">
+            android:layout_below="@+id/search"
+            android:layout_above="@+id/Button_newYorkTime-AddWord">
 
         </ListView>
 
